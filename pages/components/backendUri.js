@@ -1,4 +1,4 @@
-const URI = "http://localhost:5000";
+const URI = "http://65.2.73.17:8080";
 
 const postData = async (path, data) => {
   const token =  localStorage.getItem('token')
