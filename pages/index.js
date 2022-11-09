@@ -9,11 +9,11 @@ export default function Home() {
     const getValues = async () => {
       const token = localStorage.getItem("token");
       if (token) {
-        router.push("/home");
+        return router.push("/home");
       }
     };
     getValues();
-  }, []);
+  }, [router]);
   const [FormData, setFormData] = useState({
     email: "",
     password: "",

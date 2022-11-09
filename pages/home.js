@@ -12,7 +12,7 @@ function Home() {
       return router.replace("/");
     }
     getQuoteData();
-  }, []);
+  }, [router]);
 
   const LogoutUser = () => {
     localStorage.removeItem("token");

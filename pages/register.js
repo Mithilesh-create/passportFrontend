@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { postData } from "./components/backendUri";
 
-function register() {
+function Register() {
   const router = useRouter();
   const [FormData, setFormData] = useState({
     username: "",
@@ -15,11 +15,11 @@ function register() {
     const getValues = async () => {
       const token = localStorage.getItem("token");
       if (token) {
-        router.push("/home");
+        return router.push("/home");
       }
     };
     getValues();
-  }, []);
+  }, [router]);
   const OnChangeHandler = (name, value) => {
     setFormData({ ...FormData, [name]: value });
   };
@@ -89,4 +89,4 @@ function register() {
   );
 }
 
-export default register;
+export default Register;
