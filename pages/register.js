@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { postData } from "./components/backendUri";
+import { postData } from "../components/backendUri";
 
 function Register() {
   const router = useRouter();

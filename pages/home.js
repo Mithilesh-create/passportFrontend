@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { deleteData, getData } from "./components/backendUri";
+import { deleteData, getData } from "../components/backendUri";
 
 function Home() {
   const router = useRouter();

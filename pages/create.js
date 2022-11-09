@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { postData } from "./components/backendUri";
-export default function Home() {
+import { postData } from "../components/backendUri";
+export default function CreateQuote() {
   const router = useRouter();
   const [FormData, setFormData] = useState({
     title: "",

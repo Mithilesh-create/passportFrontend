@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { updateData } from "./components/backendUri";
-export default function Home() {
+import { updateData } from "../components/backendUri";
+export default function Update() {
   const router = useRouter();
   const [FormData, setFormData] = useState({
     title: "",

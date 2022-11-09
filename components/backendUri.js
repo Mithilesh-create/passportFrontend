@@ -1,6 +1,6 @@
 const URI = "http://65.2.73.17:8080";
 
-const postData = async (path, data) => {
+export const postData = async (path, data) => {
   const token =  localStorage.getItem('token')
   const response = await fetch(`${URI}${path}`, {
     method: "POST",
@@ -16,7 +16,7 @@ const postData = async (path, data) => {
   }
   return res;
 };
-const getData = async (path) => {
+export const getData = async (path) => {
   const token =  localStorage.getItem('token')
   const response = await fetch(`${URI}${path}`, {
     headers: {
@@ -26,7 +26,7 @@ const getData = async (path) => {
   });
   return response.json();
 };
-const updateData = async (path, data) => {
+export const updateData = async (path, data) => {
   const token =  localStorage.getItem('token')
   const response = await fetch(`${URI}${path}`, {
     method: "PUT",
@@ -39,7 +39,7 @@ const updateData = async (path, data) => {
   });
   return response.json();
 };
-const deleteData = async (path) => {
+export const deleteData = async (path) => {
   const token =  localStorage.getItem('token')
   const response = await fetch(`${URI}${path}`, {
     method: "DELETE",
@@ -48,10 +48,4 @@ const deleteData = async (path) => {
     }
   });
   return response.json();
-};
-export  {
-  postData,
-  getData,
-  updateData,
-  deleteData,
 };

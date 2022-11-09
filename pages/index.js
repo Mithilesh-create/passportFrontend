@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { postData } from "./components/backendUri";
-export default function Home() {
+import { postData } from "../components/backendUri";
+export default function Login() {
   const router = useRouter();
   useEffect(() => {
     const getValues = async () => {
