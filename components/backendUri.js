@@ -1,4 +1,4 @@
-const URI = "http://65.2.73.17:8080";
+const URI = "http://13.233.51.71:8080";
 
 export const postData = async (path, data) => {
   const token =  localStorage.getItem('token')
